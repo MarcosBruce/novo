@@ -28,4 +28,4 @@ def saudacao(id):
     return render_template('homepage_nome.html', nome = id)
 
 if __name__ == "__main__":
-    app_Marcos.run(debug=True)
+    app_Marcos.run(port=8000, debug=True)
