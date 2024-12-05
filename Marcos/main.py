@@ -2,8 +2,12 @@ from flask import Flask
 
 app_Marcos = Flask (__name__)
 
-@app_Marcos.route('/')
+@app_Marcos.route('/ola')
 def raiz():
     return 'Olá, turma!'
 
-app_Marcos.run()
+def saudacoes (nome):
+    return f'Olá, {nome}'
+
+if __name__ == "__main__":
+    app_Marcos.run()
